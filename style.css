@@ -1,6 +1,7 @@
 body h1, h2, h3, h4, h5, h6{
     font-family: 'Roboto', sans-serif;
     color: #2A1E59;
+    margin: 0;
 }
 body p{
     font-family: 'Roboto', sans-serif;
@@ -53,6 +54,35 @@ body p{
 }
 
 /* Common CSS ends here */
+
+/* Navbar css starts here */
+#topnav {
+    overflow: hidden;
+    background-color: black;
+    margin-bottom: 10px;
+    position: sticky;
+    top: 0;
+  }
+  
+  #topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  #topnav a:hover {
+    background-color: indigo;
+    color: white;
+  }
+  
+  #topnav a.active {
+    background-color: red;
+    color: white;
+  }
+/* Navbar css ends here */
 
 /* Banner starts here */
 #banner{
