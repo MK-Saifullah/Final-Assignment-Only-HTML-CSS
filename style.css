@@ -25,7 +25,28 @@ body p{
 .btn-color:hover{
     background: indigo;
 }
-
+.btn-color a, .btn-general a {
+    text-decoration: none;
+    color: white;
+}
+.btn-general{
+    padding: 10px 25px;
+    border-radius: 6px;
+    color: white;
+    background: gray;
+    width: 185px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: .5s linear;
+}
+.btn-general:hover{
+    background: indigo;
+}
+.view-btn{
+    text-align: center;
+    padding-bottom: 50px;
+}
 
 /* Common CSS ends here */
 
@@ -65,3 +86,58 @@ body p{
 }
 
 /* Banner ends here */
+
+/* Blog starts here */
+#blog-container{
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+}
+.detail-section{
+    width: 200px;
+    height: 200px;
+    background: #161616;
+    border-radius: 15px;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+.blog-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   
+}
+.single-blog {
+    height:320px;
+    border: 1px solid gray;
+    margin: 0 10px 10px 10px;
+    border-radius:10px;
+}
+.single-blog p span{
+    padding-right: 25px;
+}
+.single-blog img {
+    width: 250px;
+    height: 150px;
+}
+.blog-inside{
+    padding-left: 15px;
+}
+.country-blog .flag {
+    width: 25%;
+    height:25%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.country-blog{
+    height:180px;
+    border: 1px solid gray;
+    /* padding:5px; */
+    margin: 0 10px 10px 10px;
+    border-radius:10px;
+    text-align: center;
+}
+/* Blog ends here */
