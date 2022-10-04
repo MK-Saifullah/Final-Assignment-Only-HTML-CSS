@@ -90,6 +90,7 @@ body p{
     background: #161616;
     width: 1000px;
     margin: 0 auto;
+    padding-top: 10px;
     border-radius: 15px;
     height: 450px;
     transition: all linear .5s;
