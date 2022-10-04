@@ -13,7 +13,7 @@ body p{
     margin: 0 auto;
 }
 .btn-color{
-    background-color: #DD0000;
+    background-color: red;
     padding: 10px 35px;
     border-radius: 6px;
     color: #fff;
@@ -242,7 +242,7 @@ ul li a span{
     background: black;
 }
 /* Footer ends here */
-
+/* ************************************************************* */
 /* Responsive CSS */
 /* For Mobile device */
 @media only screen and (max-width: 688px){
@@ -255,7 +255,7 @@ ul li a span{
         /* align-items: center; */
     }
     .blog-section{
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(1, 1fr);
         padding-bottom: 20px;
     }
     .detail-section{
@@ -292,6 +292,9 @@ ul li a span{
     #goal-section {
         height: 130px;
     }
+    #goal-section a{
+        font-size: 11px;
+    }
     .country-blog .flag {
         width: 15%;
         height:15%;
@@ -302,4 +305,81 @@ ul li a span{
         height:150px;
         width: 200px;
     }
+}
+
+/* For Tablet Device */
+@media only screen and (min-width: 688px) and (max-width: 992px){
+    #banner{
+        background: #161616;
+        width: 700px;
+        /* margin: 0 auto; */
+        /* border-radius: 15px; */
+        height: 250px;
+        padding-top: 30px;
+    }
+    #blog-container{
+        /* flex-direction: column;
+        justify-content: center; */
+        padding-top: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        /* padding-top: 40px; */
+        /* padding-bottom: 0; */
+    }
+    .detail-section{
+        display: flex;
+        background: transparent;
+        height: 120px;
+    }
+    .blog-section{
+        /* display: grid; */
+        grid-template-columns: 350px 350px;
+        /* column-gap: 50px; */
+        /* row-gap: 50px; */
+    }
+    
+    
+    .single-blog {
+        height:320px;
+        width: 250px;
+        border: 1px solid black;
+        /* margin: 0 10px 20px 10px; */
+        border-radius:10px;
+    }
+    .single-blog p span{
+        /* padding-right: 25px; */
+    }
+    .single-blog img {
+        width: 250px;
+        height: 150px;
+    }
+    .blog-inside{
+        /* padding-left: 15px; */
+    }
+
+
+
+/* 
+    .head-container{
+        flex-direction: row;
+    } */
+    .left-content h1{
+        font-size: 16px;
+    }
+    .left-content p{
+        font-size: 10px;
+    }
+    #banner img{
+        width: 230px;
+    }
+    .country-blog .flag {
+        width: 25%;
+        height:25%;
+    }
+    .country-blog{
+        height:150px;
+        width: 300px;
+    }
+    
 }
